@@ -2,7 +2,7 @@ import yfinance as yf
 import streamlit as st
 from openai import OpenAI
 
-client = OpenAI(api_key="")
+client = OpenAI(api_key = os.environ.get("OPENAI_SECRET"))
 
 st.title("AI Investment Analyst")
 ticker = st.text_input("Enter stock ticker")
