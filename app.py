@@ -2,7 +2,7 @@ import yfinance as yf
 import streamlit as st
 from openai import OpenAI
 
-client = ""
+client = OpenAI(api_key="")
    info = stock.info
    data = {
        "company": info.get("longName"),
